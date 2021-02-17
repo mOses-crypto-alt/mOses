@@ -1,0 +1,56 @@
+b = 0
+print("Добро пожаловать в MinerX")
+print("1) Рыбалка")
+print("2) Охота")
+print("3) Вырубка леса")
+print("4) Доставка пиццы")
+print("5) Фермы")
+choose = int(input("Выберите способ заработка (цифру): "))
+if choose == 1:
+    b += 10
+elif choose == 2:
+    b += 15
+elif choose == 3:
+    b += 20
+elif choose == 4:
+        b += 349
+elif choose == 5:
+        b += 298
+
+choose = choose - choose
+print("[###########################]")
+print("Ваш баланс - ", b)
+print("[###########################]")
+while True:
+
+    print("1) Да")
+    print("2) Нет")
+    c = int(input("Желаете заработать еще?: "))
+
+    if c == 1:
+
+        print("1) Рыбалка")
+        print("2) Охота")
+        print("3) Вырубка леса")
+        print("4) Доставка пиццы")
+        print("5) Фермы")
+        choose = int(input("Выберите способ заработка (цифру): "))
+        if choose == 1:
+            b += 112
+        elif choose == 2:
+            b += 743
+        elif choose == 3:
+            b += 57
+        elif choose == 4:
+            b += 349
+        elif choose == 5:
+            b += 298
+        choose = choose - choose
+        print("[###########################]")
+        print("Ваш баланс - ", b)
+        print("[###########################]")
+    else:
+        print("|=========================|")
+        print(".......ИГРА ОКОНЧЕНА.......")
+        print("|=========================|")
+        break
